@@ -1,0 +1,392 @@
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015   1
+
+                                                         The FREQ Procedure
+
+                                                                 ST
+ 
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE         447367       19.45        447367        19.45  
+                                   AUCTION          2914        0.13        450281        19.57  
+                                   BACK ON M        1072        0.05        451353        19.62  
+                                   CLOSED         611473       26.58       1062826        46.20  
+                                   CONTINGEN      141642        6.16       1204468        52.36  
+                                   EXPIRED        228835        9.95       1433303        62.30  
+                                   NEW            200206        8.70       1633509        71.01  
+                                   PENDING         71797        3.12       1705306        74.13  
+                                   PRICE CHA      110833        4.82       1816139        78.95  
+                                   RE-ACTIVA       30585        1.33       1846724        80.28  
+                                   RENTED             27        0.00       1846751        80.28  
+                                   TEMP OFF         4128        0.18       1850879        80.46  
+                                   TEMPORARI       19244        0.84       1870123        81.29  
+                                   cancel         430365       18.71       2300488       100.00  
+
+                                                      Frequency Missing = 253
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015   2
+
+                                                         The FREQ Procedure
+
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE          11351       33.99         11351        33.99  
+                                   AUCTION            12        0.04         11363        34.02  
+                                   BACK ON M          40        0.12         11403        34.14  
+                                   CLOSED           1194        3.58         12597        37.72  
+                                   CONTINGEN         387        1.16         12984        38.88  
+                                   EXPIRED          6686       20.02         19670        58.90  
+                                   NEW              3815       11.42         23485        70.32  
+                                   PENDING           334        1.00         23819        71.32  
+                                   PRICE CHA        2907        8.70         26726        80.02  
+                                   RE-ACTIVA         165        0.49         26891        80.52  
+                                   RENTED             86        0.26         26977        80.77  
+                                   TEMP OFF           70        0.21         27047        80.98  
+                                   TEMPORARI         203        0.61         27250        81.59  
+                                   cancel           6148       18.41         33398       100.00  
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015   3
+
+                                                         The FREQ Procedure
+
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE          99917       37.81         99917        37.81  
+                                   AUCTION           448        0.17        100365        37.98  
+                                   BACK ON M         571        0.22        100936        38.19  
+                                   CLOSED          12767        4.83        113703        43.03  
+                                   CONTINGEN        6752        2.55        120455        45.58  
+                                   EXPIRED         40106       15.18        160561        60.76  
+                                   NEW             32322       12.23        192883        72.99  
+                                   PENDING          4445        1.68        197328        74.67  
+                                   PRICE CHA       20303        7.68        217631        82.35  
+                                   RE-ACTIVA        2334        0.88        219965        83.23  
+                                   RENTED           5044        1.91        225009        85.14  
+                                   TEMP OFF          456        0.17        225465        85.32  
+                                   TEMPORARI        2008        0.76        227473        86.08  
+                                   cancel          36797       13.92        264270       100.00  
+
+                                                       Frequency Missing = 3
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015   4
+
+                                                         The FREQ Procedure
+
+                                                                 ST
+ 
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE           3534       30.23          3534        30.23  
+                                   AUCTION            10        0.09          3544        30.31  
+                                   BACK ON M          29        0.25          3573        30.56  
+                                   CLOSED           1553       13.28          5126        43.84  
+                                   CONTINGEN         326        2.79          5452        46.63  
+                                   EXPIRED          1692       14.47          7144        61.10  
+                                   NEW              1434       12.26          8578        73.37  
+                                   PENDING           363        3.10          8941        76.47  
+                                   PRICE CHA         606        5.18          9547        81.65  
+                                   RE-ACTIVA          68        0.58          9615        82.24  
+                                   RENTED            296        2.53          9911        84.77  
+                                   TEMP OFF            9        0.08          9920        84.84  
+                                   TEMPORARI          45        0.38          9965        85.23  
+                                   cancel           1727       14.77         11692       100.00  
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015   5
+
+                                                         The FREQ Procedure
+
+                                                                 ST
+ 
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE         553247       21.04        553247        21.04  
+                                   AUCTION          7031        0.27        560278        21.31  
+                                   BACK ON M        1368        0.05        561646        21.36  
+                                   CLOSED         713420       27.13       1275066        48.49  
+                                   CONTINGEN      172982        6.58       1448048        55.07  
+                                   EXPIRED        309314       11.76       1757362        66.84  
+                                   NEW            250976        9.54       2008338        76.38  
+                                   PENDING         85926        3.27       2094264        79.65  
+                                   PRICE CHA      168316        6.40       2262580        86.05  
+                                   RE-ACTIVA       46373        1.76       2308953        87.81  
+                                   RENTED             13        0.00       2308966        87.81  
+                                   TEMP OFF         5194        0.20       2314160        88.01  
+                                   TEMPORARI       27974        1.06       2342134        89.07  
+                                   cancel         287267       10.93       2629401       100.00  
+
+                                                      Frequency Missing = 546
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015   6
+
+                                                         The FREQ Procedure
+
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE           8156       42.83          8156        42.83  
+                                   AUCTION            50        0.26          8206        43.09  
+                                   BACK ON M          48        0.25          8254        43.34  
+                                   CLOSED            893        4.69          9147        48.03  
+                                   CONTINGEN         452        2.37          9599        50.40  
+                                   EXPIRED          2462       12.93         12061        63.33  
+                                   NEW              2292       12.04         14353        75.37  
+                                   PENDING           342        1.80         14695        77.16  
+                                   PRICE CHA        1442        7.57         16137        84.74  
+                                   RE-ACTIVA         158        0.83         16295        85.57  
+                                   RENTED            493        2.59         16788        88.15  
+                                   TEMP OFF           20        0.11         16808        88.26  
+                                   TEMPORARI         120        0.63         16928        88.89  
+                                   cancel           2116       11.11         19044       100.00  
+
+                                                       Frequency Missing = 1
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015   7
+
+                                                         The FREQ Procedure
+
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE           1632       37.85          1632        37.85  
+                                   AUCTION             9        0.21          1641        38.06  
+                                   BACK ON M           8        0.19          1649        38.24  
+                                   CLOSED            292        6.77          1941        45.01  
+                                   CONTINGEN         148        3.43          2089        48.45  
+                                   EXPIRED           723       16.77          2812        65.21  
+                                   NEW               472       10.95          3284        76.16  
+                                   PENDING            91        2.11          3375        78.27  
+                                   PRICE CHA         264        6.12          3639        84.39  
+                                   RE-ACTIVA          57        1.32          3696        85.71  
+                                   RENTED             18        0.42          3714        86.13  
+                                   TEMP OFF           17        0.39          3731        86.53  
+                                   TEMPORARI          33        0.77          3764        87.29  
+                                   cancel            548       12.71          4312       100.00  
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015   8
+
+                                                         The FREQ Procedure
+
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE          47029       38.55         47029        38.55  
+                                   AUCTION           542        0.44         47571        38.99  
+                                   BACK ON M         195        0.16         47766        39.15  
+                                   CLOSED           8309        6.81         56075        45.96  
+                                   CONTINGEN        3774        3.09         59849        49.05  
+                                   EXPIRED         18795       15.41         78644        64.46  
+                                   NEW             13124       10.76         91768        75.22  
+                                   PENDING          2572        2.11         94340        77.32  
+                                   PRICE CHA        8160        6.69        102500        84.01  
+                                   RE-ACTIVA         844        0.69        103344        84.70  
+                                   RENTED            310        0.25        103654        84.96  
+                                   TEMP OFF           83        0.07        103737        85.03  
+                                   TEMPORARI         709        0.58        104446        85.61  
+                                   cancel          17559       14.39        122005       100.00  
+
+                                                       Frequency Missing = 1
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015   9
+
+                                                         The FREQ Procedure
+
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE          14360       36.03         14360        36.03  
+                                   AUCTION            80        0.20         14440        36.23  
+                                   BACK ON M          60        0.15         14500        36.38  
+                                   CLOSED           2462        6.18         16962        42.56  
+                                   CONTINGEN        1328        3.33         18290        45.89  
+                                   EXPIRED          5841       14.65         24131        60.54  
+                                   NEW              4611       11.57         28742        72.11  
+                                   PENDING           986        2.47         29728        74.58  
+                                   PRICE CHA        3575        8.97         33303        83.55  
+                                   RE-ACTIVA         469        1.18         33772        84.73  
+                                   RENTED            111        0.28         33883        85.01  
+                                   TEMP OFF           76        0.19         33959        85.20  
+                                   TEMPORARI         389        0.98         34348        86.18  
+                                   cancel           5510       13.82         39858       100.00  
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015  10
+
+                                                         The FREQ Procedure
+
+                                                                 ST
+ 
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE           1770       11.96          1770        11.96  
+                                   CLOSED           3448       23.30          5218        35.26  
+                                   CONTINGEN         133        0.90          5351        36.16  
+                                   EXPIRED          4677       31.61         10028        67.77  
+                                   NEW               680        4.60         10708        72.36  
+                                   PENDING           213        1.44         10921        73.80  
+                                   PRICE CHA         462        3.12         11383        76.92  
+                                   RE-ACTIVA          54        0.36         11437        77.29  
+                                   TEMP OFF           13        0.09         11450        77.38  
+                                   TEMPORARI          56        0.38         11506        77.75  
+                                   cancel           3292       22.25         14798       100.00  
+
+                                                       Frequency Missing = 1
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015  11
+
+                                                         The FREQ Procedure
+
+                                                                 ST
+ 
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE          15190       17.03         15190        17.03  
+                                   AUCTION            62        0.07         15252        17.10  
+                                   BACK ON M          41        0.05         15293        17.14  
+                                   CLOSED          16374       18.36         31667        35.50  
+                                   CONTINGEN        2538        2.85         34205        38.35  
+                                   EXPIRED         27551       30.89         61756        69.23  
+                                   NEW              5526        6.20         67282        75.43  
+                                   PENDING          1373        1.54         68655        76.97  
+                                   PRICE CHA        3531        3.96         72186        80.93  
+                                   RE-ACTIVA         839        0.94         73025        81.87  
+                                   TEMP OFF          126        0.14         73151        82.01  
+                                   TEMPORARI         649        0.73         73800        82.74  
+                                   cancel          15400       17.26         89200       100.00  
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015  12
+
+                                                         The FREQ Procedure
+
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE          20039       42.43         20039        42.43  
+                                   AUCTION            86        0.18         20125        42.61  
+                                   BACK ON M         140        0.30         20265        42.91  
+                                   CLOSED           1261        2.67         21526        45.58  
+                                   CONTINGEN         680        1.44         22206        47.01  
+                                   EXPIRED          6721       14.23         28927        61.24  
+                                   NEW              6276       13.29         35203        74.53  
+                                   PENDING           430        0.91         35633        75.44  
+                                   PRICE CHA        3307        7.00         38940        82.44  
+                                   RE-ACTIVA         220        0.47         39160        82.91  
+                                   RENTED           1723        3.65         40883        86.56  
+                                   TEMP OFF           67        0.14         40950        86.70  
+                                   TEMPORARI         251        0.53         41201        87.23  
+                                   cancel           6031       12.77         47232       100.00  
+
+                                                       Frequency Missing = 1
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015  13
+
+                                                         The FREQ Procedure
+
+                                                                 ST
+ 
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE         207278       24.84        207278        24.84  
+                                   BACK ON M         460        0.06        207738        24.90  
+                                   CLOSED           1719        0.21        209457        25.10  
+                                   CONTINGEN        9189        1.10        218646        26.20  
+                                   EXPIRED         36376        4.36        255022        30.56  
+                                   NEW            152377       18.26        407399        48.83  
+                                   PENDING         37323        4.47        444722        53.30  
+                                   PRICE CHA       51517        6.17        496239        59.47  
+                                   RE-ACTIVA       10353        1.24        506592        60.72  
+                                   RENTED         185933       22.28        692525        83.00  
+                                   TEMP OFF         2105        0.25        694630        83.25  
+                                   TEMPORARI       20472        2.45        715102        85.71  
+                                   cancel         119273       14.29        834375       100.00  
+
+                                                       Frequency Missing = 1
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015  14
+
+                                                         The FREQ Procedure
+
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE        1091640       27.17       1091640        27.17  
+                                   AUCTION         11416        0.28       1103056        27.46  
+                                   BACK ON M        2773        0.07       1105829        27.53  
+                                   CLOSED         624696       15.55       1730525        43.08  
+                                   CONTINGEN      341572        8.50       2072097        51.58  
+                                   EXPIRED        269961        6.72       2342058        58.30  
+                                   NEW            490521       12.21       2832579        70.51  
+                                   PENDING        169923        4.23       3002502        74.74  
+                                   PRICE CHA      304034        7.57       3306536        82.31  
+                                   RE-ACTIVA       86909        2.16       3393445        84.47  
+                                   RENTED             43        0.00       3393488        84.47  
+                                   TEMP OFF        10357        0.26       3403845        84.73  
+                                   TEMPORARI       54211        1.35       3458056        86.08  
+                                   cancel         559212       13.92       4017268       100.00  
+
+                                                      Frequency Missing = 998
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015  15
+
+                                                         The FREQ Procedure
+
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE          29125       41.03         29125        41.03  
+                                   AUCTION           149        0.21         29274        41.24  
+                                   BACK ON M         233        0.33         29507        41.57  
+                                   CLOSED           2147        3.02         31654        44.60  
+                                   CONTINGEN        1215        1.71         32869        46.31  
+                                   EXPIRED         10548       14.86         43417        61.17  
+                                   NEW              9220       12.99         52637        74.16  
+                                   PENDING           922        1.30         53559        75.46  
+                                   PRICE CHA        5198        7.32         58757        82.78  
+                                   RE-ACTIVA         422        0.59         59179        83.38  
+                                   RENTED           2613        3.68         61792        87.06  
+                                   TEMP OFF           80        0.11         61872        87.17  
+                                   TEMPORARI         359        0.51         62231        87.68  
+                                   cancel           8748       12.32         70979       100.00  
+
+                                                       Frequency Missing = 2
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015  16
+
+                                                         The FREQ Procedure
+
+                                                                 ST
+ 
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE          96298       16.40         96298        16.40  
+                                   AUCTION          1526        0.26         97824        16.66  
+                                   BACK ON M         335        0.06         98159        16.72  
+                                   CLOSED         141555       24.11        239714        40.83  
+                                   CONTINGEN       28860        4.92        268574        45.74  
+                                   EXPIRED        113618       19.35        382192        65.09  
+                                   NEW             39539        6.73        421731        71.83  
+                                   PENDING         19624        3.34        441355        75.17  
+                                   PRICE CHA       25491        4.34        466846        79.51  
+                                   RE-ACTIVA       10057        1.71        476903        81.22  
+                                   RENTED              3        0.00        476906        81.22  
+                                   TEMP OFF         1403        0.24        478309        81.46  
+                                   TEMPORARI        7053        1.20        485362        82.66  
+                                   cancel         101793       17.34        587155       100.00  
+
+                                                      Frequency Missing = 198
+                                                           The SAS System                           16:11 Wednesday, May 6, 2015  17
+
+                                                         The FREQ Procedure
+
+                                                                 ST
+ 
+                                                                         Cumulative    Cumulative
+                                   st           Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                   ACTIVE          43510       28.72         43510        28.72  
+                                   AUCTION           530        0.35         44040        29.07  
+                                   BACK ON M         165        0.11         44205        29.18  
+                                   CLOSED          16778       11.07         60983        40.25  
+                                   CONTINGEN        3445        2.27         64428        42.53  
+                                   EXPIRED         37196       24.55        101624        67.08  
+                                   NEW             11670        7.70        113294        74.78  
+                                   PENDING          2287        1.51        115581        76.29  
+                                   PRICE CHA        7516        4.96        123097        81.25  
+                                   RE-ACTIVA         774        0.51        123871        81.76  
+                                   RENTED             14        0.01        123885        81.77  
+                                   TEMP OFF           74        0.05        123959        81.82  
+                                   TEMPORARI         664        0.44        124623        82.26  
+                                   cancel          26883       17.74        151506       100.00  
+
+                                                       Frequency Missing = 1

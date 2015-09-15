@@ -1,0 +1,13 @@
+option compress = yes;
+
+%LET CInput = GIS;
+
+%include "./importData.sas";
+
+*%LET filepath = /home/datamain/MLS/;
+%LET filepath = ../;
+libname fout 	"&filepath.Format/";
+
+*%importData(&CInput, &CInput, MLS_UPTO_2010_GIS.txt,MLS_UPTO_2010_GIS, N);
+*%importData(&CInput, &CInput, gis_2010.txt, gis_2010, N);
+%importData(&CInput, &CInput, gis_2011.txt, gis_2011, N);

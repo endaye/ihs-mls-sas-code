@@ -1,0 +1,200 @@
+option compress=yes;
+
+libname libo "/opt/data/datamain/MLS/output/other";
+libname libre "/opt/data/datamain/MLS/sas_dataset_final_oth";
+
+%macro combine(dstype);
+%do i =2011 %to 2011;
+	proc contents data=libo.other_&dstype._&i. varnum out=dold;run;
+	proc sort;by name;run;
+	proc contents data=libre.other_&dstype._&i. varnum out=dnew;run;
+	proc sort;by name;run;
+	proc print data=dnew;run;
+	data m;
+	merge dold(in=a) dnew(in=b);run;
+	by name; 
+	if a=0 and b=1;
+	run;
+	proc contents;run;
+/*
+	data other_&dstype._&i.;
+	set libo.other_&dstype._&i. libre.other_&dstype._&i.;
+	run;
+
+	proc sort nodup;by ln1 ud st;run;	
+*/
+%end;
+%mend;
+/*
+%combine(AttachedSingle);
+
+%combine(Business);
+%combine(MixedUse);
+%combine(Commercial);
+%combine(DetachedSingle);
+%combine(DeededParking);
+%combine(Industrial);
+%combine(LotsAndLand);
+%combine(MultiFamily);
+%combine(MobileHomes);
+%combine(TwoToFour);
+%combine(OfficeTech);
+%combine(InstutToDevelop);
+%combine(Rentals);
+%combine(ResidentialProperty);
+%combine(ResidentialRental);
+%combine(RetailStores);
+%combine(VacantLand);
+
+*/
+
+
+
+
+
+
+%macro add_gis_refmt(mlsclass);
+
+%do i = 1 %to &yrnum;
+	data mls;
+	set mlsin.all_&mlsclass._&&yr&i;
+	LN1 = LN*1;
+	*if compress(upcase(CNY),' ') = 'COOK' | compress(upcase(CNY),' ') = '';
+	run;
+
+	proc sort data=mls; by LN1; run;
+
+	data mls_gis other.other_&mlsclass._&&yr&i;
+	merge mls(in=a) gis.gis_all(in=b);
+	by LN1;
+	if a=0 then delete;
+	*if a=1 & b=0 & compress(upcase(CNY),' ')='' then delete;
+	if compress(upcase(CNY),' ')='COOK' | (compress(upcase(CNY),' ')='' & b=1) then output mls_gis;
+	else output other.other_&mlsclass._&&yr&i;
+	*;
+	run;
+
+	*** out other county;
+	data other.other_&mlsclass._&&yr&i;
+	set other.other_&mlsclass._&&yr&i;
+	drop 
+	CCA 
+	COMMUNITY 
+	COUNTY 
+	CongsnDist 
+	IHS_Tract 
+	LSAD_TRANS 
+	Muni 
+	MuniCCA 
+	PUMA5 
+	TRACT 
+	TownRgn 
+	Township 
+	TractNm_No ;
+	run;
+	*** ;
+
+	proc contents data=mls_gis noprint out=mls_ctnt(keep=name type); run;
+	
+	***date refomat;
+	data var_date;
+	set mls_ctnt;
+	if upcase(name)='AUCTION_DATE' | upcase(name)='BMD' | upcase(name)='CLOSEDDATE' | upcase(name)='CONTRACTDATE' 
+	| upcase(name)='LD' | upcase(name)='LDR' | upcase(name)='OD' | upcase(name)='OMD' 
+	| upcase(name)='PHOTODATE' | upcase(name)='RECORDMODDATE' | upcase(name)='STD' | upcase(name)='UD' 
+	| upcase(name)='XD' | upcase(name)='VTDATE' | upcase(name)='AVAILABLE_DATE';
+	format dvar_out $50.;
+	dvar_out = cats(Name,'1');
+	run;
+
+	data _NULL_;
+	set var_date;
+	call symputx('dvarnum', _N_);
+	call symput(cats('dvarin',_N_), name);
+	call symput(cats('dvarout',_N_), dvar_out);
+	run;
+
+	data mls_cln1;
+	set mls_gis;
+	%do j = 1 %to &dvarnum;
+		if length(&&dvarin&j) = 6 then do;
+			tmp_mth = substr(&&dvarin&j ,1,2)*1;
+			tmp_day = substr(&&dvarin&j ,3,2)*1;
+			tmp_yr = substr(&&dvarin&j ,5,2)*1;
+			if tmp_yr <= 30 then tmp_yr = tmp_yr+2000;
+			else if tmp_yr > 30 then tmp_yr = tmp_yr+1900;
+		end;
+		if length(&&dvarin&j) > 6 then do;
+			tmp_yr = substr(&&dvarin&j ,1,4)*1;
+			tmp_mth = substr(&&dvarin&j ,6,2)*1;
+			tmp_day = substr(&&dvarin&j ,9,2)*1;
+		end;
+		format &&dvarout&j yymmdd10.;
+		&&dvarout&j = mdy(tmp_mth, tmp_day, tmp_yr);
+	%end;
+	drop tmp_mth tmp_day tmp_yr;
+	run;
+	***;
+
+	data var_str; set mls_ctnt; if type=2; run;
+	data _NULL_;
+	set var_str;
+	call symputx('svarnum', _N_);
+	call symput(cats('svar',_N_), compress(name));
+	run;
+	
+	***max length reformat;
+	data tmp_1;
+	set mls_cln1;
+	%do k = 1 %to &svarnum;
+		len&k = length(&&svar&k);
+	%end;
+	keep len1 - len&svarnum;
+	run;
+
+	proc means data=tmp_1 noprint;
+	output out=tmp_2 max(len1-len&svarnum)=maxlen1-maxlen&svarnum;
+	run;
+
+	%do m = 1 %to &svarnum;
+		%if &m = 1 %then %do;
+			data tmp_3; set tmp_2; keep maxlen&m; rename maxlen&m = maxlen; run;
+		%end;
+		%else %do;
+			data tmp_3; set tmp_3 tmp_2(keep=maxlen&m rename=(maxlen&m=maxlen)); run;
+		%end;
+	%end;
+
+	data _NULL_;
+	set tmp_3;
+	format fmt $10.;
+	fmt = cats("$",maxlen,".");
+	call symputx(cats("maxlen",_N_), maxlen);
+	call symput(cats("fmt",_N_), fmt);
+	run;
+
+	data mls_cln2;
+	%do n = 1 %to &svarnum;
+	length &&svar&n $ &&maxlen&n;
+	format &&svar&n &&fmt&n;
+	informat &&svar&n &&fmt&n;
+	%end;
+	set mls_cln1;
+	run;
+	***;
+
+	***upper case reformat;
+	data mls_cln3;
+	set mls_cln2;
+	%do p = 1 %to &svarnum;
+		if compress(&&svar&p,'abcdefghijklmnopqrstuvwxyz','k')^='' then &&svar&p = upcase( &&svar&p );
+	%end;
+	run;
+	***;
+
+	data mlsout.&mlsclass._&&yr&i;
+	set mls_cln3;
+	run;
+%end;
+
+%mend add_gis_refmt;

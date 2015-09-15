@@ -1,0 +1,36 @@
+# This is for initial scriopt to merge and for geocode data
+sas data_import.sas
+sas merge_mls.sas
+sas export_for_gis.sas
+
+# Once you get the geocode data run following command 
+
+gis_import.sas
+merge_gis_back.sas
+mls_reformat.sas
+
+cp -u ../output1/*.sas7bdat ../sas_dataset_final/
+
+
+
+
+cp -u ../historic_pattern_cleaned/attachedsingle_checked2_2004.sas7bdat ../sas_dataset_final/attachedsingle_2004.sas7bdat
+cp -u ../historic_pattern_cleaned/attachedsingle_checked2_2005.sas7bdat ../sas_dataset_final/attachedsingle_2005.sas7bdat
+cp -u ../historic_pattern_cleaned/attachedsingle_checked2_2006.sas7bdat ../sas_dataset_final/attachedsingle_2006.sas7bdat
+cp -u ../historic_pattern_cleaned/attachedsingle_checked2_2007.sas7bdat ../sas_dataset_final/attachedsingle_2007.sas7bdat
+cp -u ../historic_pattern_cleaned/attachedsingle_checked2_2008.sas7bdat ../sas_dataset_final/attachedsingle_2008.sas7bdat
+cp -u ../historic_pattern_cleaned/detachedsingle_checked2_2004.sas7bdat ../sas_dataset_final/detachedsingle_2004.sas7bdat
+cp -u ../historic_pattern_cleaned/detachedsingle_checked2_2005.sas7bdat ../sas_dataset_final/detachedsingle_2005.sas7bdat
+cp -u ../historic_pattern_cleaned/detachedsingle_checked2_2006.sas7bdat ../sas_dataset_final/detachedsingle_2006.sas7bdat
+cp -u ../historic_pattern_cleaned/detachedsingle_checked2_2007.sas7bdat ../sas_dataset_final/detachedsingle_2007.sas7bdat
+cp -u ../historic_pattern_cleaned/detachedsingle_checked2_2008.sas7bdat ../sas_dataset_final/detachedsingle_2008.sas7bdat
+cp -u ../historic_pattern_cleaned/multifamily_checked2_2004.sas7bdat ../sas_dataset_final/multifamily_2004.sas7bdat
+cp -u ../historic_pattern_cleaned/multifamily_checked2_2005.sas7bdat ../sas_dataset_final/multifamily_2005.sas7bdat
+cp -u ../historic_pattern_cleaned/multifamily_checked2_2006.sas7bdat ../sas_dataset_final/multifamily_2006.sas7bdat
+cp -u ../historic_pattern_cleaned/multifamily_checked2_2007.sas7bdat ../sas_dataset_final/multifamily_2007.sas7bdat
+cp -u ../historic_pattern_cleaned/multifamily_checked2_2008.sas7bdat ../sas_dataset_final/multifamily_2008.sas7bdat
+cp -u ../historic_pattern_cleaned/twotofour_checked2_2004.sas7bdat ../sas_dataset_final/twotofour_2004.sas7bdat
+cp -u ../historic_pattern_cleaned/twotofour_checked2_2005.sas7bdat ../sas_dataset_final/twotofour_2005.sas7bdat
+cp -u ../historic_pattern_cleaned/twotofour_checked2_2006.sas7bdat ../sas_dataset_final/twotofour_2006.sas7bdat
+cp -u ../historic_pattern_cleaned/twotofour_checked2_2007.sas7bdat ../sas_dataset_final/twotofour_2007.sas7bdat
+cp -u ../historic_pattern_cleaned/twotofour_checked2_2008.sas7bdat ../sas_dataset_final/twotofour_2008.sas7bdat

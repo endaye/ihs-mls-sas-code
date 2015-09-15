@@ -1,0 +1,1 @@
+/usr/local/bin/sas: line 1: 23855 Killed                  /usr/local/SAS92/SASFoundation/9.2/sas $1.sas -nodms
